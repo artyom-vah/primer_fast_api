@@ -1,4 +1,3 @@
-
 from logging.config import fileConfig
 import sys
 from os.path import abspath, dirname
