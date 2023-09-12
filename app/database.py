@@ -7,11 +7,11 @@ from dotenv import load_dotenv
 # Загрузите переменные окружения из файла .env
 load_dotenv()
 
-DB_HOST = os.getenv("DB_HOST", "localhost")
-DB_PORT = os.getenv("DB_PORT", "5432")
-DB_USER = os.getenv("DB_USER", "postgres")
-DB_PASS = os.getenv("DB_PASS", "postgres")
-DB_NAME = os.getenv("DB_NAME", "postgres")
+DB_HOST = os.getenv("DB_HOST", default="localhost")
+DB_PORT = os.getenv("DB_PORT", default="5432")
+DB_USER = os.getenv("DB_USER", default="postgres")
+DB_PASS = os.getenv("DB_PASS", default="postgres")
+DB_NAME = os.getenv("DB_NAME", default="postgres")
 
 # Подключаемся к базе данных и создаем переменную async_session_maker которую можно будет использоавть
 # для работы с этой бд, сначала генерируем юрл DATABASE_URL - который позволяет алхимии понять где находится база данных
@@ -26,7 +26,6 @@ async_session_maker = sessionmaker(engine, class_=AsyncSession, expire_on_commit
 
 
 class Base(DeclarativeBase):
-
     pass
 
 

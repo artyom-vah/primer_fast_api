@@ -1,5 +1,3 @@
-# git commit -m '1. Знакомство с фреймворком - 4. Валидация данных с Pydantic'
-
 from fastapi import FastAPI, Query, Depends
 from typing import Optional
 from datetime import date
