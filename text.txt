@@ -1,3 +1,5 @@
+
+
 1)
 Artem@artem MINGW64 /d/Programming/Python/fast_api/primer_fast_api/app (main)
 alembic init migrations

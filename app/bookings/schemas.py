@@ -1,5 +1,6 @@
-from pydantic import BaseModel
 from datetime import date
+
+from pydantic import BaseModel
 
 
 class SBooking(BaseModel):
@@ -9,8 +10,9 @@ class SBooking(BaseModel):
     date_from : date
     date_to : date
     price : int
-    total_cost : int
+    total_cost: int
     total_days : int
+
 
     class Config:
         orm_mode = True

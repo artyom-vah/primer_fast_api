@@ -1,5 +1,6 @@
+from sqlalchemy import JSON, Column, ForeignKey, Integer, String
+
 from app.database import Base
-from sqlalchemy import Column, Integer, String, JSON, ForeignKey
 
 
 class Hotels(Base):

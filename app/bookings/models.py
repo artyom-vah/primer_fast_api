@@ -1,4 +1,6 @@
-from sqlalchemy import Column, Integer, Date, String, JSON, ForeignKey,Computed
+from sqlalchemy import (JSON, Column, Computed, Date, ForeignKey, Integer,
+                        String)
+
 from app.database import Base
 
 
